@@ -1,0 +1,216 @@
+/* ===============================
+   VARIABLES DE COLOR
+   =============================== */
+:root {
+    --fondo: #f2f4f8;
+    --blanco: #ffffff;
+    --texto: #1f2937;
+    --secundario: #6b7280;
+    --principal: #c62828;
+    --acento: #f59e0b;
+    --sombra: 0 8px 22px rgba(0,0,0,.12);
+    --radio: 18px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base del body */
+body {
+    background: linear-gradient(120deg, #f2f4f8, #e8ebf1);
+    font-family: system-ui, sans-serif;
+    color: var(--texto);
+}
+
+/* ===============================
+   GRID PRINCIPAL
+   =============================== */
+.estructura {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "cab"
+        "lat"
+        "con"
+        "pie";
+}
+
+/* ===============================
+   CABECERA
+   =============================== */
+.cabecera {
+    grid-area: cab;
+    background: linear-gradient(90deg, var(--principal), #8e0000);
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: var(--sombra);
+}
+
+.cabecera i {
+    color: var(--acento);
+}
+
+/* ===============================
+   MENÚ LATERAL
+   =============================== */
+.lateral {
+    grid-area: lat;
+    padding: 1rem;
+}
+
+.lateral ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+/* Botones del menú */
+.filtro {
+    width: 100%;
+    border: none;
+    padding: .7rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background: #e5e7eb;
+    text-align: left;
+    transition: all .3s;
+}
+
+.filtro:hover {
+    background: var(--acento);
+    color: white;
+}
+
+.filtro.activo {
+    background: var(--principal);
+    color: white;
+}
+
+/* ===============================
+   PANEL DE TARJETAS
+   =============================== */
+.panel {
+    grid-area: con;
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* ===============================
+   TARJETAS
+   =============================== */
+.tarjeta {
+    background: var(--blanco);
+    width: 300px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    position: relative;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0,0,0,.2);
+}
+
+.tarjeta figure {
+    height: 420px;
+    position: relative;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Texto sobre la imagen */
+.tarjeta figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(transparent, rgba(0,0,0,.75));
+    color: white;
+}
+
+.tarjeta span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ===============================
+   BOTONES DE ACCIÓN
+   =============================== */
+.acciones {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.acciones button,
+.acciones a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: var(--sombra);
+}
+
+.acciones a {
+    color: var(--texto);
+}
+
+.marcar.marcado {
+    color: var(--principal);
+}
+
+/* ===============================
+   PIE DE PÁGINA
+   =============================== */
+.pie {
+    grid-area: pie;
+    text-align: center;
+    padding: 1rem;
+    color: var(--secundario);
+}
+
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
+@media (600px <= width < 800px) {
+    .estructura {
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+            "cab cab"
+            "lat con"
+            "pie pie";
+    }
+}
+
+@media (width >= 800px) {
+    .estructura {
+        grid-template-columns: 260px 1fr;
+        grid-template-areas:
+            "cab cab"
+            "lat con"
+            "lat pie";
+    }
+}

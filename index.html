@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Configuración responsive y SEO básico -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pinterest visual de pueblos y ciudades de la Región de Murcia">
+    <meta name="keywords" content="Murcia, pueblos, ciudades, turismo, galería">
+    <meta name="author" content="Alumno DAW">
+
+    <title>Murcia en Imágenes</title>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Contenedor principal con CSS Grid -->
+<div class="estructura">
+
+    <!-- CABECERA -->
+    <header class="cabecera">
+        <h1>
+            <i class="fa-solid fa-map-location-dot"></i>
+            Murcia en Imágenes
+        </h1>
+    </header>
+
+    <!-- MENÚ LATERAL -->
+    <aside class="lateral">
+        <nav>
+            <ul>
+                <!-- Botones de filtrado -->
+                <li><button class="filtro activo">Todos</button></li>
+                <li><button class="filtro">Costa</button></li>
+                <li><button class="filtro">Interior</button></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="panel" id="panel">
+
+        <!-- TARJETA -->
+        <section class="tarjeta">
+            <figure>
+                <img src="img/murcia.jpg" alt="Centro histórico de Murcia">
+                <figcaption>
+                    <span>Murcia</span>
+                    <p>Centro histórico</p>
+                </figcaption>
+            </figure>
+
+            <!-- Acciones flotantes -->
+            <div class="acciones">
+                <button class="marcar">
+                    <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <a href="https://es.wikipedia.org/wiki/Murcia" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- TARJETA -->
+        <section class="tarjeta">
+            <figure>
+                <img src="img/cartagena.jpg" alt="Paseo marítimo de Cartagena">
+                <figcaption>
+                    <span>Cartagena</span>
+                    <p>Paseo marítimo</p>
+                </figcaption>
+            </figure>
+
+            <div class="acciones">
+                <button class="marcar">
+                    <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <a href="https://es.wikipedia.org/wiki/Cartagena" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- TARJETA -->
+        <section class="tarjeta">
+            <figure>
+                <img src="img/Castillo_de_Lorca1.jpg" alt="Castillo de Lorca">
+                <figcaption>
+                    <span>Lorca</span>
+                    <p>Castillo medieval</p>
+                </figcaption>
+            </figure>
+
+            <div class="acciones">
+                <button class="marcar">
+                    <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <a href="https://es.wikipedia.org/wiki/Lorca" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- TARJETA -->
+        <section class="tarjeta">
+            <figure>
+                <img src="img/caravaca.jpg" alt="Santuario de Caravaca de la Cruz">
+                <figcaption>
+                    <span>Caravaca</span>
+                    <p>Santuario de la Cruz</p>
+                </figcaption>
+            </figure>
+
+            <div class="acciones">
+                <button class="marcar">
+                    <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <a href="https://es.wikipedia.org/wiki/Caravaca_de_la_Cruz" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- TARJETA -->
+        <section class="tarjeta">
+            <figure>
+                <img src="img/jumilla.jpg" alt="Bodegas de Jumilla">
+                <figcaption>
+                    <span>Jumilla</span>
+                    <p>Bodegas y vino</p>
+                </figcaption>
+            </figure>
+
+            <div class="acciones">
+                <button class="marcar">
+                    <i class="fa-regular fa-bookmark"></i>
+                </button>
+                <a href="https://es.wikipedia.org/wiki/Jumilla" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie">
+        <p>Práctica CSS Grid + Flex · DAW</p>
+    </footer>
+
+</div>
+
+<!-- Lógica JavaScript -->
+<script src="js/logica.js"></script>
+</body>
+</html>
