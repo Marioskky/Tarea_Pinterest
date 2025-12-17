@@ -1,25 +1,33 @@
-# 🌍 Murcia en Imágenes
+# 📌 Murcia en Imágenes - Tarea Pinterest
 
-Proyecto web tipo galería visual inspirado en Pinterest, dedicado a mostrar pueblos y ciudades de la Región de Murcia mediante imágenes, utilizando HTML, CSS y JavaScript.
+Proyecto web que presenta un **Pinterest visual** de pueblos y ciudades de la Región de Murcia. Esta práctica utiliza **CSS Grid y Flexbox** para organizar tarjetas con imágenes, información y acciones interactivas.
 
----
+## 🚀 Descripción
 
-## 📖 Descripción
+El proyecto permite:
 
-Este proyecto consiste en una página web responsive que muestra una colección de tarjetas con imágenes representativas de distintos municipios de la Región de Murcia.  
-El diseño está basado en una estructura **mobile first**, combinando **CSS Grid** y **Flexbox**, y añade interactividad mediante JavaScript.
+* Visualizar lugares destacados de Murcia en tarjetas tipo Pinterest
+* Filtrar por categorías como Costa o Interior
+* Acceder a información externa mediante enlaces a Wikipedia
+* Marcar lugares favoritos con botones interactivos
+* Diseño modular y responsive que se adapta a cualquier pantalla
 
----
+## 🌐 Visitar la página web
+
+[![Abrir Murcia en Imágenes](https://img.shields.io/badge/Ver%20Proyecto-Web-blue?style=for-the-badge)](https://marioskky.github.io/Tarea_Pinterest/)
 
 ## 🛠️ Tecnologías utilizadas
 
-- **HTML5** → Estructura semántica del contenido
-- **CSS3** → Diseño visual, Grid, Flexbox y estilos
-- **JavaScript** → Interacción con las tarjetas
-- **Font Awesome** → Iconos
-- **Markdown** → Documentación del proyecto
+* **HTML5** – Estructura y semántica del sitio
+* **CSS3** – Grid, Flexbox y diseño responsivo
+* **Font Awesome** – Iconos para acciones y visualización
+* **JavaScript** – Funcionalidad de filtrado y acciones de las tarjetas
 
----
+## 📁 Estructura del proyecto
 
-## 📂 Estructura del proyecto
-
+```bash
+📦 Murcia-en-Imagenes
+ ┣ 📜 index.html        # Página principal
+ ┣ 📜 estilos.css       # Estilos de Grid y Flex
+ ┣ 📜 js/logica.js      # Scripts para filtrado y acciones
+ ┗ 📁 img               # Imágenes de ciudades y pueblos
